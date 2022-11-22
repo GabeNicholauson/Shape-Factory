@@ -1,1 +1,101 @@
 @import './reset.css';
+
+:root {
+    --app-blue: #4e4eff;
+    --app-green: #9f0;
+    --app-orange: #f90;
+    --app-pink: #f09;
+    --app-purple: #90f;
+    --app-bg-color: #121212;
+    --app-input-color: #434343;
+    --app-input-border-color: #606060;
+    --app-margin: 20px;
+}
+
+body {
+    background-color: var(--app-bg-color);
+}
+
+main {
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/**********************************
+    Form
+**********************************/
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form select, .create {
+    height: 35px;
+    font-size: 17px;
+}
+
+form select {
+    width: 180px;
+    padding: 0 10px;
+}
+
+.create {
+    width: 80px;
+    background-color: var(--app-orange);
+    border: 1px solid var(--app-orange);
+}
+
+form select:nth-child(2), .create {
+    margin-left: var(--app-margin);
+}
+
+/**********************************
+    Shapes box
+**********************************/
+.grid-container {
+    width: 600px;
+    height: 400px;
+    margin-inline: auto;
+    justify-content: space-evenly;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+}
+
+.square {
+    background-color: var(--app-blue);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+/**********************************
+    Same properties
+**********************************/
+
+main, .grid-container {
+    display: grid;
+    place-items: center;
+}
+
+h2, form select, .create {
+    color: #fff;
+}
+
+h2, form, .grid-container {
+    margin-bottom: var(--app-margin);
+}
+
+form select, .grid-container {
+    background-color: var(--app-input-color);
+    border: 1px solid var(--app-input-border-color);
+}
+
+form select, .create, .grid-container {
+    border-radius: 5px;
+}
