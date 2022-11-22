@@ -69,10 +69,17 @@ form select:nth-child(2), .create {
 }
 
 .square {
-    background-color: var(--app-blue);
+    border-radius: 5px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.square, .circle {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    cursor: pointer;
 }
 /**********************************
     Same properties
