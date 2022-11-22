@@ -1,1 +1,1 @@
-click [here](https://github.com/GabeNicholauson/Shape-Factory) to view the page.
+click [here](https://gabenicholauson.github.io/Shape-Factory/) to view the page.
