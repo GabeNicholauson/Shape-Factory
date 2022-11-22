@@ -1,11 +1,7 @@
 @import './reset.css';
 
 :root {
-    --app-blue: #4e4eff;
-    --app-green: #9f0;
     --app-orange: #f90;
-    --app-pink: #f09;
-    --app-purple: #90f;
     --app-bg-color: #121212;
     --app-input-color: #434343;
     --app-input-border-color: #606060;
@@ -18,6 +14,7 @@ body {
 
 main {
     height: 100vh;
+    place-items: center;
 }
 
 h2 {
@@ -63,9 +60,9 @@ form select:nth-child(2), .create {
     width: 600px;
     height: 400px;
     margin-inline: auto;
-    justify-content: space-evenly;
-    grid-template-columns: 100px 100px 100px 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px 100px;
+    place-content: space-evenly space-evenly;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px;
 }
 
 .square {
@@ -87,7 +84,6 @@ form select:nth-child(2), .create {
 
 main, .grid-container {
     display: grid;
-    place-items: center;
 }
 
 h2, form select, .create {
